@@ -1,0 +1,16 @@
+# Build directories & binaries
+build/
+bin/
+*.exe
+*.o
+*.obj
+CAitSithApp
+
+# Generated test exports
+demo_character.obj
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
