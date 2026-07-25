@@ -57,20 +57,54 @@ The software is structured into five core modular systems:
 
 ---
 
-## 🛠️ Building & Running
+## 🛠️ Prerequisites & Build Guide
 
-### Prerequisites
-* **C++ Compiler**: MSVC (Visual Studio 2022 / Build Tools), Clang, or GCC (C++17 support).
-* **Build System**: CMake 3.16+.
+### Required Downloadable Tools
 
-### Build Commands
+To compile and run from source code, you only need **2 main tools**:
+1. A **C++17 Compiler** (`MSVC`, `GCC`, or `Clang`).
+2. **CMake 3.16+**.
+
+*(Note: All 3D graphics libraries like `GLFW`, `GLM`, and JSON parsers are **automatically fetched and built by CMake**—you do NOT need to download them manually!)*
+
+| Item Needed | Do you need to download it manually? | How it is installed |
+| :--- | :---: | :--- |
+| **C++ Compiler** | **Yes** | Visual Studio (Windows), Xcode (macOS), or `build-essential` (Linux). |
+| **CMake** | **Yes** | Quick 1-click install (`winget`, `brew`, or `apt`). |
+| **Git** | **Yes** | To clone the repository. |
+| **3D Graphics & Math Libraries** | ❌ **NO** | Automatically fetched by CMake! |
+| **Shaders & Assets** | ❌ **NO** | Included in repository (`assets/`). |
+
+### Quick One-Line Setup Commands
+
+#### 🪟 Windows
+```powershell
+# Option A: Install via Visual Studio Installer (Select "Desktop development with C++")
+# Option B: Install CMake via winget command line
+winget install Kitware.CMake
+```
+
+#### 🍏 macOS
 ```bash
-# Generate build files
+# Install Xcode compiler tools & CMake via Homebrew
+xcode-select --install
+brew install cmake
+```
+
+#### 🐧 Linux & WSL (Ubuntu / Debian)
+```bash
+sudo apt update && sudo apt install -y build-essential cmake git libgl1-mesa-dev libglfw3-dev
+```
+
+### Build & Run Commands
+
+```bash
+# 1. Generate build files
 cmake -B build -S .
 
-# Compile target
+# 2. Compile target
 cmake --build build --config Release
 
-# Run executable
+# 3. Run executable
 ./build/bin/Release/CAitSith.exe
 ```
