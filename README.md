@@ -4,6 +4,27 @@ An interactive C++ application designed for AI-driven 3D character creation, dig
 
 ---
 
+## 🖥️ Platform Compatibility & System Requirements
+
+**CAitSith** is designed from the ground up to be **100% Cross-Platform**. Rebuilding or running the engine across different operating systems requires zero code modifications.
+
+### Supported Operating Systems & Compilers
+
+| Platform | Supported Versions | Recommended Compiler | Windowing & Input Driver |
+| :--- | :--- | :--- | :--- |
+| **Windows** | Windows 10, Windows 11 (64-bit) | **MSVC** (Visual Studio 2019/2022), **MinGW-w64**, or **Clang** | Native Win32 / GLFW |
+| **macOS** | macOS 10.14+ (Intel & Apple Silicon M1/M2/M3/M4) | **Apple Clang** (Xcode Command Line Tools) | Cocoa / OpenGL Bridge |
+| **Linux** | Ubuntu, Fedora, Arch, Debian, Manjaro, etc. | **GCC** (GCC 7+) or **Clang** | X11 / Wayland / Mesa / NVIDIA |
+| **WSL / WSL2** | Ubuntu / Debian via WSLg | **GCC 15.2+** / **Clang** | Mesa / X11 / Wayland display |
+
+### Minimum Hardware Requirements
+* **Processor**: Intel, AMD, or ARM64 (Apple Silicon M-series) 64-bit CPU.
+* **Graphics**: Any GPU supporting OpenGL 3.3 Core Profile (Intel HD 4000+, NVIDIA GTX 400+, AMD Radeon HD 5000+, Apple Silicon).
+* **RAM**: 2 GB minimum (4 GB+ recommended for high poly-count sculpting).
+* **Storage**: 100 MB available space.
+
+---
+
 ## 🏛️ Application Architecture
 
 The software is structured into five core modular systems:
