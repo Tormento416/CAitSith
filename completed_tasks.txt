@@ -3,3 +3,4 @@
 [SUCCESS] [2026-07-25 12:07:55] Created simple step-by-step beginner manual (BEGINNER_GUIDE.md) covering navigation, AI prompt generation, sculpting tools, lighting, and file I/O.
 [SUCCESS] [2026-07-25 12:08:22] Committed all changes and pushed branch to remote origin/main on GitHub (Tormento416/CAitSith).
 [SUCCESS] [2026-07-25 12:13:15] Added platform compatibility matrix and hardware requirements to README.md and pushed to GitHub main branch.
+[SUCCESS] [2026-07-25 12:19:48] Added downloadable prerequisites checklist and OS setup commands to README.md and pushed commit 0d1446e to GitHub main branch.
